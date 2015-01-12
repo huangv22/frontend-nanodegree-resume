@@ -6,17 +6,17 @@ console.log(email);
 console.log(newEmail);
 
 //*/
-var formattedName = HTMLheaderName.replace("%data%","Vincent")
-var formattedRole = HTMLheaderRole.replace("%data%","Product Manager");
+var name = "Vincent Huang"
+var formattedName = HTMLheaderName.replace("%data%",name)
 
+var role = "Product Manager"
+var formattedRole = HTMLheaderRole.replace("%data%",role);
 
-$("#header").prepend(formattedName).append(formattedRole);
+$("#header").prepend(formattedRole).prepend(formattedName);
 
 // $("#header").append(formmatedName);
 
 /*/
-
-/*
 Replacing Awesome with Fun
 
 
@@ -28,5 +28,4 @@ var funThoughts = awesomeThoughts.replace("AWESOME","FUN");
 console.log(funThoughts);
 
 $("#main").append(funThoughts);
-
 */
